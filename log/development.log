@@ -75,3 +75,188 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 4303ms (Views: 4290.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-08 11:45:33 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (3.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Using rake 12.2.1
+Using concurrent-ruby 1.0.5
+Using i18n 0.9.1
+Using minitest 5.10.3
+Using thread_safe 0.3.6
+Using tzinfo 1.2.4
+Using activesupport 5.1.4
+Using builder 3.2.3
+Using erubi 1.7.0
+Using mini_portile2 2.3.0
+Using nokogiri 1.8.1
+Using rails-dom-testing 2.0.3
+Using crass 1.0.2
+Using loofah 2.1.1
+Using rails-html-sanitizer 1.0.3
+Using actionview 5.1.4
+Using rack 2.0.3
+Using rack-test 0.7.0
+Using actionpack 5.1.4
+Using nio4r 2.1.0
+Using websocket-extensions 0.1.2
+Using websocket-driver 0.6.5
+Using actioncable 5.1.4
+Using globalid 0.4.1
+Using activejob 5.1.4
+Using mini_mime 1.0.0
+Using mail 2.7.0
+Using actionmailer 5.1.4
+Using activemodel 5.1.4
+Using arel 8.0.0
+Using activerecord 5.1.4
+Using public_suffix 3.0.0
+Using addressable 2.5.2
+Using babel-source 5.8.35
+Using execjs 2.7.0
+Using babel-transpiler 0.7.0
+Using bindex 0.5.0
+Using bundler 1.16.0.pre.3
+Using byebug 9.1.0
+Using xpath 2.1.0
+Using capybara 2.15.4
+Using ffi 1.9.18
+Using childprocess 0.8.0
+Using coffee-script-source 1.12.2
+Using coffee-script 2.4.1
+Using method_source 0.9.0
+Using thor 0.20.0
+Using railties 5.1.4
+Using coffee-rails 4.2.2
+Using connection_pool 2.2.1
+Using multi_json 1.12.2
+Using jbuilder 2.7.0
+Using rb-fsevent 0.10.2
+Using rb-inotify 0.9.10
+Using ruby_dep 1.5.0
+Using listen 3.1.5
+Using puma 3.10.0
+Using rack-proxy 0.6.2
+Using sprockets 3.7.1
+Using sprockets-rails 3.2.1
+Using rails 5.1.4
+Using tilt 2.0.8
+Using react-rails 2.4.1
+Using rubyzip 1.2.1
+Using sass-listen 4.0.0
+Using sass 3.5.3
+Using sass-rails 5.0.6
+Using selenium-webdriver 3.7.0
+Using spring 2.0.2
+Using spring-watcher-listen 2.0.1
+Using sqlite3 1.3.13
+Using turbolinks-source 5.0.3
+Using turbolinks 5.0.1
+Using uglifier 3.2.0
+Using web-console 3.5.1
+Using webpacker 3.0.2
+Bundle complete! 18 Gemfile dependencies, 76 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Hash: fcb9d960618cf1195e9f
+Version: webpack 3.8.1
+Time: 1218ms
+                                   Asset       Size  Chunks                    Chunk Names
+server_rendering-309aeee595f98229b253.js    2.18 MB       0  [emitted]  [big]  server_rendering
+     application-b6b3e5c448c7522ff26f.js    2.18 MB       1  [emitted]  [big]  application
+     hello_react-5508c118dcd5fb2fa738.js    3.17 kB       2  [emitted]         hello_react
+                           manifest.json  210 bytes          [emitted]         
+  [14] ./app/javascript/components ^\.\/.*$ 197 bytes {0} {1} [built]
+  [42] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [43] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [44] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 41 hidden modules
+
+WARNING in ./app/javascript/components/HelloWorld.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <div>
+    |       ^
+  7 |         <div>Greeting: {this.props.greeting}</div>
+  8 |       </div>
+  9 |     );
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+
+Completed 200 OK in 3477ms (Views: 3464.9ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItems (20171108131802)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171108131802"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-08 17:46:50.064562"], ["updated_at", "2017-11-08 17:46:50.064562"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-11-08 11:46:57 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1156ms (Views: 1147.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-08 11:47:47 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Adam/.rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Adam/.rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 7ms (Views: 4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-08 11:53:07 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Adam/.rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Adam/.rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 17ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-08 11:53:57 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (2.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Adam/Desktop/RAILS-REACT/public/packs
+Completed 200 OK in 3805ms (Views: 3795.2ms | ActiveRecord: 0.3ms)
+
+

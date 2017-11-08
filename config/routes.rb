@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :items
-  # get 'items/index', to: 'items#index', as: 'search_articles'
 
   root 'items#index'
 
